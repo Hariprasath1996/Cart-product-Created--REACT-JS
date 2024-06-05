@@ -60,17 +60,17 @@ const User = () => {
     const [user, setUser] = useState({ name: "", age: "" })
 
     const changeName = (e) => {
-        setUser((user)=>{
-return {
-    ...user,name:e.target.value
-}
+        setUser((user) => {
+            return {
+                ...user, name: e.target.value
+            }
         })
     }
 
     const changeAge = (e) => {
-        setUser((user)=>{
-            return{
-...user, age: e.target.value
+        setUser((user) => {
+            return {
+                ...user, age: e.target.value
             }
         })
     }
@@ -80,9 +80,9 @@ return {
             <h1>{user.name}</h1>
             <h1>{user.age}</h1>
             <form >
-                <label >Enter a Name :</label> <input type="text"  onChange={changeName}/>
+                <label >Enter a Name :</label> <input type="text" onChange={changeName} />
                 <br />
-                <label >Enter a Age :</label><input type="number"  onChange={changeAge} />
+                <label >Enter a Age :</label><input type="number" onChange={changeAge} />
             </form>
 
         </>
