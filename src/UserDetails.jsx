@@ -56,8 +56,9 @@ import { useState } from "react";
 
 // type : 3
 const User = () => {
+const [user,setuser]=useState[{name:"Hari",age :27}]
 
-    
+
     return (
         <>
 
