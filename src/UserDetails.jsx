@@ -90,6 +90,8 @@ import { useState } from "react";
 // }
 
 // export default User;
+// type :4 
+// create one function instead of two , and  its one called when i entered in input that gives the value of name and age instantly
 
 const User = () => {
     const [user, setUser] = useState({ name: "", age: "" })
