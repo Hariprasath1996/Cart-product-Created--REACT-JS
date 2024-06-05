@@ -90,24 +90,25 @@ import { useState } from "react";
 // }
 
 // export default User;
+
 // type :4 
 // create one function instead of two , and  its one called when i entered in input that gives the value of name and age instantly
 
-const User = () => {
-    const [user, setUser] = useState({ name: "", age: "" })
-    const ChangeHandler = (e) => {
-        setUser({ ...user, [e.target.name]: e.target.value })
-    }
-    return (
-        <>
-            <h1>{user.name}</h1>
-            <h1>{user.age}</h1>
-            <form >
-                <label >Enter a Name :</label><input type="text" name="name" onChange={ChangeHandler} />
-                <br />
-                <label >Enter a Age :</label><input type="number" name="age" onChange={ChangeHandler} />
-            </form>
-        </>
-    );
-}
-export default User;
+// const User = () => {
+//     const [user, setUser] = useState({ fullName: "", age: "" })
+//     const ChangeHandler = (e) => {
+//         setUser({ ...user, [e.target.name]: e.target.value })
+//     }
+//     return (
+//         <>
+//             <h1>{user.fullName}</h1>
+//             <h1>{user.age}</h1>
+//             <form >
+//                 <label >Enter a Name :</label><input type="text" name="fullName" onChange={ChangeHandler} />
+//                 <br />
+//                 <label >Enter a Age :</label><input type="number" name="age" onChange={ChangeHandler} />
+//             </form>
+//         </>
+//     );
+// }
+// export default User;
