@@ -1,11 +1,11 @@
 // import Cart from "./Cart";
 
-import User from "./UserDetails";
+import Advice from "./AdviceApp";
 
 const App = () => {
   return (<>
     {/* <Cart/> */}
-    <User />
+    <Advice />
   </>);
 }
 
